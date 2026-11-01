@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS ANIMATION</title>
+    <style>
+        #box{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: relative;
+            left: 0px;
+            border-radius: 50px ;
+        }
+       
+
+    </style>
+</head>
+<body>
+    <h2>Javascript Animation</h2>
+  
+    <div id="box"></div>
+    <hr>
+    <button onclick="movebox()">START ANIMATION</button>
+    
+    <script>
+        function movebox(){
+            let box=document.querySelector("#box");
+            let pos=0;
+            let animation=setInterval(function(){
+                if (pos>=300) {
+                    pos = 0;
+                }
+                else{
+                    pos+=5;
+                    box.style.left = pos + "px"
+                }
+            },100)
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM JS</title>
+</head>
+<STYle>
+    H2{
+        text-transform: capitalize;
+    }
+</STYle>
+<body>
+    <h2 >hello everyone</h2>
+    <button id="btn"  onclick="changetext()">click here</button>
+    <script>
+        function changetext (){
+            let head=document.querySelector("h2")
+            head.textContent=" welcome to js";
+            head.style.color="red"
+        }
+    </script>
+</body>
+</html>
